@@ -22,7 +22,7 @@ woolGrid = [[4, 4, 4, 4, 4, 4, 4],
             [4, 4, 0, 0, 0, 4, 4],
             [4, 4, 4, 4, 4, 4, 4]]
 '''
-#Terraria Bunny Attempt
+#Terraria Bunny 
 woolGrid = [[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
             [3, 3, 3, 3, 15, 15, 15, 3, 3, 3, 15, 15, 15, 15, 15, 15, 3, 3],
             [3, 3, 3, 3, 15, 0, 0, 15, 15, 15, 0, 0, 0, 0, 0, 15, 3, 3],
@@ -49,7 +49,7 @@ for i, wool in enumerate(woolLine):
 '''
 #This will print a grid of wool blocks
 for i, row in enumerate(woolGrid):
-    print(row)
+    #print(row)
     for j, col in enumerate(row):
-        print(col)
-        mc.setBlock(pos.x + j, pos.y + i, pos.z, 35, col)
+        #print(col)
+        mc.setBlock(pos.x + j, pos.y + i, pos.z - 10, 35, col)
